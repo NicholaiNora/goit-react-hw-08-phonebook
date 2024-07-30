@@ -3,13 +3,13 @@ import { RegisterForm } from 'components/RegisterForm/RegisterForm';
 
 export default function Register() {
   return (
-    <div>
-      <HelmetProvider>
+    <HelmetProvider>
+      <div>
         <Helmet>
           <title>Registration</title>
         </Helmet>
-      </HelmetProvider>
-      <RegisterForm />
-    </div>
+        <RegisterForm />
+      </div>
+    </HelmetProvider>
   );
 }

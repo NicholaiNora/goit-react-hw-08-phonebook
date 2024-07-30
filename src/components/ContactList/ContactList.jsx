@@ -15,8 +15,7 @@ function ContactList() {
       .join(' ');
   };
 
-  const filteredContacts = useSelector(selectFilteredContacts); 
-  console.log(filteredContacts);
+  const filteredContacts = useSelector(selectFilteredContacts);
   // const filterContacts = () => {
   //   return contacts.filter(
   //     contact =>

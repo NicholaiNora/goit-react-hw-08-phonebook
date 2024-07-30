@@ -49,7 +49,6 @@ function ContactForm() {
         contact.name.toLowerCase() === name.toLowerCase() ||
         contact.phone === phone
     );
-    console.log(toCapitalize(name));
     if (contactExists) {
       alert(`${toCapitalize(name)} or ${phone} is already in contacts.`);
       reset();

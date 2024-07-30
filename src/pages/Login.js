@@ -3,13 +3,14 @@ import { LoginForm } from 'components/LoginForm/LoginForm';
 
 export default function Login() {
   return (
-    <div>
-      <HelmetProvider>
+    <HelmetProvider>
+      <div>
         <Helmet>
           <title>Login</title>
         </Helmet>
-      </HelmetProvider>
-      <LoginForm />
-    </div>
+
+        <LoginForm />
+      </div>
+    </HelmetProvider>
   );
 }

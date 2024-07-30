@@ -20,18 +20,19 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <div>
-      <HelmetProvider>
+    <HelmetProvider>
+      <div>
         <Helmet>
           <title>Contacts</title>
         </Helmet>
-      </HelmetProvider>
-      <h2>Phonebook</h2>
-      <ContactForm />
-      <h2>Contacts</h2>
-      <SearchFilter />
-      {isLoading && !error && <b>Request in progress...</b>}
-      <ContactList />
-    </div>
+
+        <h2>Phonebook</h2>
+        <ContactForm />
+        <h2>Contacts</h2>
+        <SearchFilter />
+        {isLoading && !error && <b>Request in progress...</b>}
+        <ContactList />
+      </div>
+    </HelmetProvider>
   );
 }
