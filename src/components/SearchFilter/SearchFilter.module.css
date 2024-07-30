@@ -1,4 +1,4 @@
-.filterContainer {
+/* .filterContainer {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -15,4 +15,25 @@
     border: 1px solid rgb(139,180,232);
     box-shadow: rgb(212,230,252) 0 0 0px 2px, rgb(148,192,249) 0 0 1px 1px, inset rgb(218,233,252) 0 0 0 1px;
     outline: none;
+} */
+
+.divFilter {
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.divFilter p {
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+input[type='text'],
+input[type='tel'] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
 }

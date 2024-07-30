@@ -6,16 +6,25 @@ import { useDispatch } from 'react-redux';
 import { deleteContact } from 'features/operations';
 
 function ContactListItem({ contact, toCapitalize }) {
-
   const dispatch = useDispatch();
-  
+
   return (
-    <li className={css.contact}>
-      <span className={css.contactItemSpan}>
-        {toCapitalize(contact.name)}: {contact.phone}
-      </span>
+    // <li className={css.contact}>
+    //   <span className={css.contactItemSpan}>
+    //     {toCapitalize(contact.name)}: {contact.number}
+    //   </span>
+    //   <button
+    //     className={css.contactItemButton}
+    //     onClick={() => dispatch(deleteContact(contact.id))}
+    //   >
+    //     Delete
+    //   </button>
+    // </li>
+    <li className={css.contactListItem}>
+      <span>{toCapitalize(contact.name)}:</span>
+      <span className={css.contactAlign}>{contact.number}</span>
       <button
-        className={css.contactItemButton}
+        className={css.btnDelete}
         onClick={() => dispatch(deleteContact(contact.id))}
       >
         Delete
@@ -30,4 +39,3 @@ ContactListItem.propTypes = {
 };
 
 export default ContactListItem;
-

@@ -26,7 +26,16 @@ function ContactList() {
 
   // const filteredContacts = filterContacts();
   return (
-    <ul className={css.contactList}>
+    // <ul className={css.contactList}>
+    //   {filteredContacts.map(contact => (
+    //     <ContactListItem
+    //       key={contact.id}
+    //       toCapitalize={toCapitalize}
+    //       contact={contact}
+    //     />
+    //   ))}
+    // </ul>
+    <ul className={css.ulBox}>
       {filteredContacts.map(contact => (
         <ContactListItem
           key={contact.id}
