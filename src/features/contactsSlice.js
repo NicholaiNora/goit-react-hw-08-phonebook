@@ -59,7 +59,7 @@ export const contactsSlice = createSlice({
       })
       .addCase(addContact.rejected, (state, action) => {
         state.isLoading = false;
-        state.erorr = action.payload;
+        state.error = action.payload;
       })
       .addCase(deleteContact.pending, state => {
         state.isLoading = true;
@@ -73,7 +73,7 @@ export const contactsSlice = createSlice({
       })
       .addCase(deleteContact.rejected, (state, action) => {
         state.isLoading = false;
-        state.erorr = action.payload;
+        state.error = action.payload;
       });
   },
 });
